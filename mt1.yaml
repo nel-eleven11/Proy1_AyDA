@@ -1,0 +1,354 @@
+---
+# Símbolo en blanco
+blank_symbol: '_'
+
+# Lista de estados
+q_states:
+  q_list:
+    - q0          # Estado inicial
+    - q1
+    - q2
+    - q3
+    - q4
+    - q5
+    - q7
+    - q8
+    - q9
+    - q10
+    - q11
+    - q12
+    - q13
+    - q14
+    - q15
+    - q16
+    - q17
+    - q18
+  initial: q0
+  final: q18
+
+# Alfabeto de entrada
+alphabet:
+  - '0'
+  - '1'
+
+# Alfabeto de la cinta
+tape_alphabet:
+  - '0'
+  - '1'
+  - '_'
+  - 'A'
+  - 'X'
+
+# Función de transición
+delta:
+  # Transiciones de q0
+  - params:
+      initial_state: q0
+      tape_input: '1'
+    output:
+      final_state: q1
+      tape_output: 'X'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q0
+      tape_input: 'X'
+    output:
+      final_state: q18
+      tape_output: '0'
+      tape_displacement: 'R'
+  # Transiciones de q1
+  - params:
+      initial_state: q1
+      tape_input: '1'
+    output:
+      final_state: q2
+      tape_output: 'X'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q1
+      tape_input: 'X'
+    output:
+      final_state: q18
+      tape_output: '1'
+      tape_displacement: 'R'
+  # Transiciones de q2
+  - params:
+      initial_state: q2
+      tape_input: '1'
+    output:
+      final_state: q2
+      tape_output: '1'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q2
+      tape_input: 'X'
+    output:
+      final_state: q3
+      tape_output: '0'
+      tape_displacement: 'R'
+  # Transiciones de q3
+  - params:
+      initial_state: q3
+      tape_input: 'X'
+    output:
+      final_state: q4
+      tape_output: 'A'
+      tape_displacement: 'R'
+  # Transiciones de q4
+  - params:
+      initial_state: q4
+      tape_input: 'X'
+    output:
+      final_state: q5
+      tape_output: '0'
+      tape_displacement: 'R'
+  # Transiciones de q5
+  - params:
+      initial_state: q5
+      tape_input: 'X'
+    output:
+      final_state: q12
+      tape_output: 'A'
+      tape_displacement: 'L'
+  # Transiciones de q7
+  - params:
+      initial_state: q7
+      tape_input: '1'
+    output:
+      final_state: q7
+      tape_output: 'A'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q7
+      tape_input: '0'
+    output:
+      final_state: q7
+      tape_output: '0'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q7
+      tape_input: 'A'
+    output:
+      final_state: q7
+      tape_output: 'A'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q7
+      tape_input: 'X'
+    output:
+      final_state: q8
+      tape_output: '0'
+      tape_displacement: 'L'
+  # Transiciones de q8
+  - params:
+      initial_state: q8
+      tape_input: '1'
+    output:
+      final_state: q8
+      tape_output: 'A'
+      tape_displacement: 'L'
+  - params:
+      initial_state: q8
+      tape_input: '0'
+    output:
+      final_state: q9
+      tape_output: '0'
+      tape_displacement: 'L'
+  - params:
+      initial_state: q8
+      tape_input: 'A'
+    output:
+      final_state: q10
+      tape_output: '1'
+      tape_displacement: 'R'
+  # Transiciones de q9
+  - params:
+      initial_state: q9
+      tape_input: '1'
+    output:
+      final_state: q9
+      tape_output: '1'
+      tape_displacement: 'L'
+  - params:
+      initial_state: q9
+      tape_input: '0'
+    output:
+      final_state: q12
+      tape_output: '0'
+      tape_displacement: 'L'
+  - params:
+      initial_state: q9
+      tape_input: 'A'
+    output:
+      final_state: q10
+      tape_output: '1'
+      tape_displacement: 'R'
+  # Transiciones de q10
+  - params:
+      initial_state: q10
+      tape_input: '1'
+    output:
+      final_state: q10
+      tape_output: '1'
+      tape_displacement: 'R'  
+  - params:
+      initial_state: q10
+      tape_input: '0'
+    output:
+      final_state: q10
+      tape_output: '0'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q10
+      tape_input: 'X'
+    output:
+      final_state: q11
+      tape_output: '1'
+      tape_displacement: 'L'
+  # Transiciones de q11
+  - params:
+      initial_state: q11
+      tape_input: '1'
+    output:
+      final_state: q11
+      tape_output: '1'
+      tape_displacement: 'L'  
+  - params:
+      initial_state: q11
+      tape_input: '0'
+    output:
+      final_state: q8
+      tape_output: '0'
+      tape_displacement: 'L'   
+  # Transiciones de q12
+  - params:
+      initial_state: q12
+      tape_input: '1'
+    output:
+      final_state: q12
+      tape_output: '1'
+      tape_displacement: 'L' 
+  - params:
+      initial_state: q12
+      tape_input: '0'
+    output:
+      final_state: q12
+      tape_output: '0'
+      tape_displacement: 'L'
+  - params:
+      initial_state: q12
+      tape_input: 'A'
+    output:
+      final_state: q12
+      tape_output: 'A'
+      tape_displacement: 'L'
+  - params:
+      initial_state: q12
+      tape_input: 'X'
+    output:
+      final_state: q13
+      tape_output: 'X'
+      tape_displacement: 'R'
+  # Transiciones de q13
+  - params:
+      initial_state: q13
+      tape_input: '1'
+    output:
+      final_state: q14
+      tape_output: 'X'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q13
+      tape_input: '0'
+    output:
+      final_state: q15
+      tape_output: '1'
+      tape_displacement: 'R'
+  # Transiciones de q14
+  - params:
+      initial_state: q14
+      tape_input: '1'
+    output:
+      final_state: q14
+      tape_output: '1'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q14
+      tape_input: '0'
+    output:
+      final_state: q15
+      tape_output: '1'
+      tape_displacement: 'R'
+  # Transiciones de q15
+  - params:
+      initial_state: q15
+      tape_input: '1'
+    output:
+      final_state: q15
+      tape_output: 'A'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q15
+      tape_input: '0'
+    output:
+      final_state: q15
+      tape_output: '0'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q15
+      tape_input: 'A'
+    output:
+      final_state: q15
+      tape_output: 'A'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q15
+      tape_input: 'X'
+    output:
+      final_state: q16
+      tape_output: 'X'
+      tape_displacement: 'L'
+  # Transiciones de q16
+  - params:
+      initial_state: q16
+      tape_input: '0'
+    output:
+      final_state: q17
+      tape_output: 'X'
+      tape_displacement: 'L'
+  - params:
+      initial_state: q16
+      tape_input: 'A'
+    output:
+      final_state: q16
+      tape_output: '1'
+      tape_displacement: 'L'
+  # Transiciones de q17
+  - params:
+      initial_state: q17
+      tape_input: '1'
+    output:
+      final_state: q18
+      tape_output: 'X'
+      tape_displacement: 'R'
+  - params:
+      initial_state: q17
+      tape_input: '0'
+    output:
+      final_state: q17
+      tape_output: 'X'
+      tape_displacement: 'L'
+  - params:
+      initial_state: q17
+      tape_input: 'A'
+    output:
+      final_state: q17
+      tape_output: 'X'
+      tape_displacement: 'L'
+
+# Cadenas a ser simuladas
+accepted_strings:
+  - '11111'
+
+rejected_strings:
+  - '0'
