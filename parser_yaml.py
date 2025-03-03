@@ -110,8 +110,8 @@ def procesar_configuracion(config):
     alfabeto = config['alphabet']
     alfabeto_cinta = config['tape_alphabet']
     delta = config['delta']
-    cadenas_aceptadas = config['accepted_strings']
-    cadenas_rechazadas = config['rejected_strings']
+    #cadenas_aceptadas = config['accepted_strings']
+    #cadenas_rechazadas = config['rejected_strings']
     blank_symbol = config.get('blank_symbol', '_')
 
     # Construir el diccionario de transiciones
@@ -124,8 +124,8 @@ def procesar_configuracion(config):
         'alfabeto': alfabeto,
         'alfabeto_cinta': alfabeto_cinta,
         'transiciones': transiciones,
-        'accepted_strings': cadenas_aceptadas,
-        'rejected_strings': cadenas_rechazadas,
+        #'accepted_strings': cadenas_aceptadas,
+        #'rejected_strings': cadenas_rechazadas,
         'blank_symbol': blank_symbol
     }
 
