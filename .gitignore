@@ -1,2 +1,5 @@
 __pycache__/
 .venv/
+trans.txt
+trans.yaml
+yamlImporter.py
