@@ -19,7 +19,9 @@ def simular_mt(configuracion, cadena):
     ids = []  # Lista para almacenar las descripciones instantáneas
 
     paso = 0  # Contador de pasos
-    max_pasos = 1000  # Límite para evitar bucles infinitos
+    # Límite para evitar bucles infinitos
+    # en este caso va a ser infinito
+    max_pasos = float('inf')
 
     while paso < max_pasos:
         simbolo_leido = tape.read()

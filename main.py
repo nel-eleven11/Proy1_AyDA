@@ -7,10 +7,10 @@ import os
 
 def main():
 
-    print("\nProyecto 3 - Teoría de la Computación")
+    print("\nProyecto 1 - Análisis y Diseño de Algoritmos")
     print("Autores:")
     print("Nelson García 22434")
-    print("Rodrigo Mansilla 22611\n")
+    print("Joaquín Puente 22296\n")
     
     while True:
         print("Máquinas de Turing Reconocedoras")
