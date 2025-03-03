@@ -14,7 +14,7 @@ Proyecto 1 de análisis y diseño de algoritmos
 ## Video demostrativo:
 
 ```Youtube 
-https://youtu.be/
+[https://youtu.be/](https://youtu.be/n8taSLH4uKI)
 ```
 
 
@@ -23,6 +23,7 @@ https://youtu.be/
 
 ## Diagrama de la MT
 
+![turing_machine_diagram](https://github.com/user-attachments/assets/1fb19eb6-5809-45b8-9f77-593e46be4504)
 
 ---
 
