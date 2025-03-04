@@ -23,6 +23,12 @@ Proyecto 1 de análisis y diseño de algoritmos
 
 ## Diagrama de la MT
 
+La función de transición fue tomada del siguiente material:
+
+```Link
+https://www.researchgate.net/publication/1958918_Computing_Fibonacci_numbers_on_a_Turing_Machine
+```
+
 ![turing_machine_diagram](https://github.com/user-attachments/assets/1fb19eb6-5809-45b8-9f77-593e46be4504)
 
 ---
